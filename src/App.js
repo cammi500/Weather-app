@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Form from './components/Form.jsx'
+import Card from './components/Card.jsx'
 
-function App() {
+ const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+    <div className="flex justify-center w-full items-stretch min-w-full text-3xl  flex-initial  ... text-green-600">
+      <div className="shadow-lg bg-slate-300  gap-4">
+      <Form/> 
+      <Card/>
     </div>
-  );
+    </div>
+  )
 }
-
-export default App;
+export default App
+// export default function App() {
+//   return (
+//     <h1 className="text-3xl font-bold  text-red-600 underline">
+//       Hello world!
+//     </h1>
+//   )
+// }
